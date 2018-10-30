@@ -1,0 +1,18 @@
+<br>
+<h1>Welcome to the best Gossip website man !</h1><br>
+
+<h3>Take a look at this, I mean... WaaaoOOowww </h3><br>
+
+<div class="row">
+
+  <% @gossips_all.each do |gossip| %>
+<div class="card border-secondary mb-3 col-3" style="max-width: 20rem;">
+
+  <div class="card-header"><button type="button" class="btn btn-danger disabled"><%= link_to "Gossip n°#{gossip.id}", "#{gossip.id}" %></button>   << click here to see !</div>
+  <div class="card-body">
+    <h4 class="card-title"><%= gossip.author.name %></h4>
+    <p class="card-text">"<%= gossip.content %>"</p>
+  </div>
+</div>
+    <% end %>
+  </div>

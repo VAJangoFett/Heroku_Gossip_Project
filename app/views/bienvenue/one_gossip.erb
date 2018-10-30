@@ -1,0 +1,5 @@
+<br>
+<h1>Gossip n° <%= params["id"] %> </h1><br>
+
+<h3><%= Gossip.find(params["id"]).author.name %></h3>
+    <p>"<%= Gossip.find(params["id"]).content %>"</p>
