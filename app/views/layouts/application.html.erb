@@ -32,7 +32,7 @@
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
-        <%= form_tag("/#{}", :method => "get", id: "search-form") do %>
+        <%= form_tag("https://www.google.fr", :method => "get", id: "search-form") do %>
         <%= text_field_tag :search, params[:search], placeholder: "Search Gossip" %>
         <%= submit_tag "Search" %>
         <% end %>

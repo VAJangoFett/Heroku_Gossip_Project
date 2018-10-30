@@ -7,11 +7,11 @@ class GossipController < ApplicationController
     else
       @gossips_all = Gossip.all.order('created_at DESC')
     end
-    puts "_______________________________________________________________________"
-    # puts params[:search]
-    u = User.where(name: params[:search])
-    puts u.gossips
-    puts "_______________________________________________________________________"
+    # puts "_______________________________________________________________________"
+    # # puts params[:search]
+    # u = User.where(name: params[:search])
+    # puts u.gossips
+    # puts "_______________________________________________________________________"
     # puts u.author_id
     # puts Gossip.where(author_id.user: params[:search])
 
